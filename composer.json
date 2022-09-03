@@ -1,0 +1,36 @@
+{
+  "name": "themepoint/big-query-driver",
+  "type": "library",
+  "description": "Provides an Doctrine Driver for Google BigQuery.",
+  "keywords": [
+    "biq-query",
+    "google",
+    "orm",
+    "doctrine"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hendrik Legge",
+      "email": "info@themepoint.de",
+      "homepage": "https://themepoint.de"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "doctrine/dbal": "^3.4.3",
+    "google/cloud-bigquery": "^1.23"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "ThemePoint\\DoctrineBigQuery\\": "src/"
+    }
+  }
+}
